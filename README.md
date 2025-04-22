@@ -8,3 +8,5 @@
 -[] custom prettier & eslint config
 -[] bundle analyzer plugin
 -[] custom health check route
+
+uses sqlite by default, change it according to your preference.
