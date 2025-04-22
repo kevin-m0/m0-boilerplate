@@ -19,7 +19,9 @@
     "preview": "next build && next start",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "analyze": "ANALYZE=true next build"
+    "analyze": "ANALYZE=true next build",
+    "test": "pnpm exec playwright test",
+    "ui-test": "pnpm exec playwright test --ui"
   },
   "dependencies": {
     "@prisma/client": "^6.5.0",
