@@ -2,25 +2,30 @@
   "compilerOptions": {
     /* Base Options: */
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "target": "es2022",
-    "allowJs": true,
+    "skipLibCheck": true, // code that you import won't be checked for types (mainly .d.ts files)
+    "target": "es2022", // 2022 is the de facto, and stable and supported almost everywhere
+    "allowJs": true, // we have a .env.js file
     "resolveJsonModule": true,
     "moduleDetection": "force",
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
 
     /* Strictness */
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "checkJs": true,
+    "strict": true, // NEVER set this to false
+    "noUncheckedIndexedAccess": true, // helps against unsafe indexing
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "exactOptionalPropertyTypes": true,
+    "checkJs": true, // type checking enabled in js files
 
     /* Bundled projects */
-    "lib": ["dom", "dom.iterable", "ES2022"],
-    "noEmit": true,
+    "lib": ["dom", "dom.iterable", "ES2022"], // set this if your project runs in the DOM, you'll get access to browser APIs and etc
+    "noEmit": true, // no js files produced after
     "module": "ESNext",
     "moduleResolution": "Bundler",
-    "jsx": "preserve",
+    "jsx": "preserve", // "dear ts, don't touch my JSX code, the bundler will handle it."
     "plugins": [{ "name": "next" }],
     "incremental": true,
 
