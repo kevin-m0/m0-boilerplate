@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
     /* Base Options: */
-    "esModuleInterop": true,
+    "esModuleInterop": true, // smooths out imports between cjs and esm (code looks better)
     "skipLibCheck": true, // code that you import won't be checked for types (mainly .d.ts files)
     "target": "es2022", // 2022 is the de facto, and stable and supported almost everywhere
     "allowJs": true, // we have a .env.js file
-    "resolveJsonModule": true,
-    "moduleDetection": "force",
+    "resolveJsonModule": true, // allows importing json files to your TS code
+    "moduleDetection": "force", 
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
 
