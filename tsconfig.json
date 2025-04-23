@@ -14,10 +14,13 @@
     "strict": true, // NEVER set this to false
     "noUncheckedIndexedAccess": true, // helps against unsafe indexing
     "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "exactOptionalPropertyTypes": true,
+    "forceConsistentCasingInFileNames": true,
     "checkJs": true, // type checking enabled in js files
 
     /* Bundled projects */
@@ -26,6 +29,7 @@
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "jsx": "preserve", // "dear ts, don't touch my JSX code, the bundler will handle it."
+    "types": ["node"], // needed?
     "plugins": [{ "name": "next" }],
     "incremental": true,
 
@@ -35,7 +39,7 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": [
+  "include": [ 
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
@@ -43,5 +47,5 @@
     "**/*.js",
     ".next/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", ".next", "coverage"]
 }
