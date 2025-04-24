@@ -64,14 +64,6 @@ test: add unit tests for auth service
 chore(deps): update dependencies
 ```
 
-## Code Style
-
-- Use TypeScript for all new code
-- Follow the existing code style
-- Write meaningful commit messages
-- Add tests for new features
-- Update documentation when needed
-
 ## Pre-commit Hooks
 
 The project uses Husky to enforce code quality before commits. The following checks are performed:
