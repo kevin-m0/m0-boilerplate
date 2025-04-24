@@ -22,7 +22,7 @@
     "analyze": "ANALYZE=true next build",
     "test": "pnpm exec playwright test",
     "ui-test": "pnpm exec playwright test --ui",
-    "prepare": "husky"
+    "prepare": "husky && husky install"
   },
   "dependencies": {
     "@prisma/client": "^6.5.0",
@@ -44,8 +44,8 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "^18.6.1",
-    "@commitlint/config-conventional": "^18.6.1",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
     "@eslint/eslintrc": "^3.3.1",
     "@next/bundle-analyzer": "^15.3.1",
     "@playwright/test": "^1.52.0",
@@ -54,9 +54,10 @@
     "@types/node": "^20.14.10",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "commitlint": "^19.8.0",
     "eslint": "^9.23.0",
     "eslint-config-next": "^15.2.3",
-    "husky": "^9.0.11",
+    "husky": "^8.0.0",
     "postcss": "^8.5.3",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",

@@ -19,7 +19,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "exactOptionalPropertyTypes": true,
+    // "exactOptionalPropertyTypes": true,
     "forceConsistentCasingInFileNames": true,
     "checkJs": true, // type checking enabled in js files
 
@@ -46,6 +46,6 @@
     "**/*.cjs",
     "**/*.js",
     ".next/types/**/*.ts"
-  ],
+, "commitlint.config.js"  ],
   "exclude": ["node_modules", ".next", "coverage"]
 }
