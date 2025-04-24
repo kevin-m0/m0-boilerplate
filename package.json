@@ -22,7 +22,7 @@
     "analyze": "ANALYZE=true next build",
     "test": "pnpm exec playwright test",
     "ui-test": "pnpm exec playwright test --ui",
-    "prepare": "husky"
+    "prepare": "husky && husky install"
   },
   "dependencies": {
     "@prisma/client": "^6.5.0",
@@ -57,7 +57,7 @@
     "commitlint": "^19.8.0",
     "eslint": "^9.23.0",
     "eslint-config-next": "^15.2.3",
-    "husky": "^9.1.7",
+    "husky": "^8.0.0",
     "postcss": "^8.5.3",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
