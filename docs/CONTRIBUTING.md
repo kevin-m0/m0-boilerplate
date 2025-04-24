@@ -27,7 +27,6 @@ We use conventional commits for clear changelog generation. Each commit message 
 
 <body>
 
-<footer>
 ```
 
 ### Types
